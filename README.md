@@ -1,19 +1,28 @@
 # Countdown
 
 ## Improved countdown
+
 The below component was designed to count down the days until our CTO's birthday, but it still needs some work. How can you make the implementation better?
 
 **Do a critique:** The current implementation isn't perfect. How could it be improved?
 
-* Pick an area of improvement to implement.
-* What would happen to the current code if the date were changed, the page layout was changed or the format was changed?
-* Does the current implementation follow best practices for HTML, CSS, JS and React?
+- Pick an area of improvement to implement.
+  A: At first glance, the code seems to be alright in almost everything. But as a ReactJS implementation, there are better ways to do
+  some of the already implemented stuff such as the management of states and lifecycles from the components. At first, there weren't hooks used and they are very useful to keep the code simpler and they do not affect the code that much. So I focused a little into integrating the use of hooks.
+
+- What would happen to the current code if the date were changed, the page layout was changed or the format was changed?
+  A: The template code didn't stop the countdown after reaching zero, which is kind of a problem. To solve this we use a clean up function in the useEffect hook as also a dynamic or conditional rendering to "unmount" a component. In this case, the data used to set the date could affect the view of the page and also the functionality of the code running.
+
+- Does the current implementation follow best practices for HTML, CSS, JS and React?
+  A: I would say yes for the most part. I think there are different ways to keep code and files in a certain order but it is totally personal. Also, I like to think that using different libraries for JS, CSS and more isn't that bad, but as a little challenge I didn't use any of them to keep it as "Vanilla" as possible.
 
 **Spice it up:** Let's be honest, this countdown could be a whole lot more exciting.
 
-* What could you do to create a greater sense of urgency?
-* How would you make this countdown more aesthetically pleasing?
-* Trust your design instincts, and explain how your design choices impact the user experience
+- What could you do to create a greater sense of urgency?
+  A: I added some custom circles with a progressive stroke to give more sense of something happening.
+- How would you make this countdown more aesthetically pleasing?
+  A: With the circles that I added, I created them as components to be reusable and also the page is responsive.
+- Trust your design instincts, and explain how your design choices impact the user experience
 
 ## Getting Started with Create React App
 

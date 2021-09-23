@@ -1,15 +1,14 @@
-import './App.css';
-import './style/Countdown.css';
-import Countdown from './components/Countdown';
+import "./App.css";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Countdown</h1>
+      <header>
+        <h1>Celebration Countdown</h1>
       </header>
       <div className="content">
-        <Countdown date='2020-12-24T00:00:00' />,
+        <Counter date="September 22 2021 6:27 pm" />
       </div>
     </div>
   );

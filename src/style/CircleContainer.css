@@ -1,0 +1,10 @@
+.clock.circle {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: 0.4s;
+}
